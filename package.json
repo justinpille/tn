@@ -1,27 +1,23 @@
 {
-  "name": "Project",
-  "version": "0.0.1",
-  "description": "",
+  "name": "tn",
+  "version": "1.0.0",
+  "description": "All four 5s and the Jack of nobs.",
   "main": "index.js",
   "scripts": {
-    "example": "command"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Justin Pille",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinpille/tn.git"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justinpille/tn/issues"
+  },
+  "homepage": "https://github.com/justinpille/tn#readme",
   "dependencies": {
     "jquery": "^2.1.4",
     "react": "^0.13.3"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.7.6",
-    "browserify": "^10.2.4",
-    "gulp": "^3.9.0",
-    "gulp-notify": "^2.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-ruby-sass": "^1.0.5",
-    "gulp-sourcemaps": "^1.5.2",
-    "reactify": "^1.1.1",
-    "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.2.3"
   }
 }

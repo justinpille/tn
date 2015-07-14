@@ -1,4 +1,4 @@
-var card = function(i) {
+var getCard = function(i) {
 	var suit, value, card;
 	switch(i % 4) {
 		case 0:
@@ -31,4 +31,4 @@ for (var i = 0; i < 50; i++) {
 	deck[i] = getCard(i);
 }
 
-console.log(deck);
+module.exports = deck;
