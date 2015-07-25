@@ -1,6 +1,9 @@
 var React = require('react');
-var Component = require('./Component.jsx');
+var Hand = require('./Hand.jsx');
+var Card = require('./Card.jsx');
 var deck = require('./deck');
+var shuffle = require('./shuffle');
+var deal = require('./deal');
 
 // Here we put our React instance to the global scope. Make sure you do not put it
 // into production and make sure that you close and open your console if the
@@ -8,14 +11,19 @@ var deck = require('./deck');
 window.React = React;
 
 
+var hand = deal(shuffle(deck), 3);
+
 var App = React.createClass({
     render: function() {
         return (
             <div>
-		            <h1>My Program</h1>
-                <Component>
-                  <span>{deck}</span>
-                </Component>
+                <Hand>
+                    {
+                      hand.map(function(card) {
+                        return <Card abrv={card.abrv} key={card.index}></Card>;
+                      })
+                    }
+                </Hand>
             </div>
         )
     }
